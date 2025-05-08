@@ -13,3 +13,7 @@ test:
 # Format all Python files using black
 format:
 	black .
+
+loadtest:
+	locust -f load_test.py --headless -u 5 -r 1 --host=http://localhost:8000
+
