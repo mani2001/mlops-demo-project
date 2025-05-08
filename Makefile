@@ -15,5 +15,6 @@ format:
 	black .
 
 loadtest:
-	locust -f load_test.py --headless -u 5 -r 1 --host=http://localhost:8000
+	locust -f load_test.py --headless -u 5 -r 1 --run-time 1m --host=http://localhost:8000
+
 
